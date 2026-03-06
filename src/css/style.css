@@ -33,6 +33,11 @@ main {
     box-shadow: 8px 8px 0 0 #000;
 }
 
+.course-card img{
+    border-radius: 10px;
+    
+}
+
 .course-card-info {
     display: flex;
     flex-direction: column;
@@ -54,13 +59,19 @@ main {
     line-height: 150%;
 }
 
-.course-card-info .course-card-publication-date{
+.course-card-info .course-card-publication-date {
     color: var(--color-gray-950);
 
     font-size: var(--font-size-text-preset-3);
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
+}
+
+.course-card-info .course-card-title {
+    margin: 0;
+    line-height: 0.9;
+
 }
 
 .course-card-info .course-card-title a {
@@ -70,7 +81,7 @@ main {
     font-style: normal;
     font-weight: 800;
     line-height: 150%;
-
+    flex-shrink: 0;
     text-decoration: none;
 }
 
