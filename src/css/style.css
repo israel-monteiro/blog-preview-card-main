@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('../assets/fonts/Figtree-Italic-VariableFont_wght.ttf'), url('../assets/fonts/Figtree-VariableFont_wght.ttf');
+
+}
+
+body {
+    background-color: var(--color-yellow);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+
+    font-family: 'Figtree', sans-serif;
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 384px;
+    /* width: 100%; */
+    padding: var(--spacing-200);
+    gap: 24px;
+
+    background-color: var(--color-white);
+    border-radius: 20px;
+    border: 1px solid var(--color-gray-950);
+    box-shadow: 8px 8px 0 0 #000;
+}
+
+.course-card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: var(--spacing-150);
+}
+
+.course-card-info span {
+    padding: var(--spacing-50) var(--spacing-150);
+    border-radius: 4px;
+    background: var(--color-yellow);
+
+    color: var(--color-gray-950);
+
+    font-size: var(--font-size-text-preset-3);
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+}
+
+.course-card-info .course-card-publication-date{
+    color: var(--color-gray-950);
+
+    font-size: var(--font-size-text-preset-3);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.course-card-info .course-card-title {
+    color: var(--color-gray-950);
+
+    font-size: var(--font-size-text-preset-1);
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+}
+
+.course-card-info .course-card-title:hover,
+.course-card-info .course-card-title:focus {
+    color: var(--color-yellow);
+}
+
+
+.course-card-info .course-card-description {
+    color: var(--color-gray-500);
+
+    font-size: var(--font-size-text-preset-2);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+
+
+.course-card-author {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-150);
+}
+
+.course-card-author img {
+    width: 32px;
+    height: 32px;
+}
+
+.course-card-author span {
+    color: var(--color-gray-950);
+
+    font-size: var(--font-size-text-preset-3);
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+
+}
